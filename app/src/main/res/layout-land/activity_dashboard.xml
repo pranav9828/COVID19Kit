@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Report"
+            android:textColor="#100D40"
+            android:textSize="29sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="COVID - 19 Global Cases"
+            android:textColor="#100D40"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="136dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/recovered"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bgcard"
+                android:padding="10dp"
+                app:cardBackgroundColor="#ffff"
+                app:cardCornerRadius="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp">
+
+                    <TextView
+                        android:id="@+id/recovered_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/recovered_cases"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="14dp"
+                        android:gravity="center_horizontal"
+                        android:text="Loading..."
+                        android:textAlignment="center"
+                        android:textColor="#100D40"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="NotSibling" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/recovered_cases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:gravity="center_horizontal"
+                    android:text="Recovered"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/death"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bgcard">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/death_cases"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="Death"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/death_num"
+                        android:layout_width="165dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/death_cases"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="26dp"
+                        android:layout_marginEnd="9dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_marginBottom="13dp"
+                        android:gravity="center_horizontal"
+                        android:text="Loading..."
+                        android:textAlignment="center"
+                        android:textColor="#100D40"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="256dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/confirmed_cases"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bgcard"
+                android:padding="10dp"
+                app:cardBackgroundColor="#ffff"
+                app:cardCornerRadius="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@id/confirmed_cases"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:gravity="center_horizontal"
+                        android:text="Confirmed Cases"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/confirmed_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/confirmed_cases"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginBottom="13dp"
+                        android:gravity="center_horizontal"
+                        android:text="Loading..."
+                        android:textAlignment="center"
+                        android:textColor="#100D40"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/total_cases"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bgcard">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@id/total_cases"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="Total Cases"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/total_num"
+                        android:layout_width="157dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_cases"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="26dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="13dp"
+                        android:text="Loading..."
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal"
+                        android:textColor="#100D40"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="315dp"
+            android:src="@drawable/map"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:id="@+id/features"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="636dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/country_card"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#173FA3"
+                app:cardCornerRadius="2dp"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="181dp"
+                    android:layout_height="107dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="43dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="World"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="17sp"
+                        android:gravity="center_horizontal" />
+
+                    <ImageView
+                        android:layout_width="46dp"
+                        android:layout_height="37dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="52dp"
+                        android:layout_marginEnd="65dp"
+                        android:layout_marginRight="65dp"
+                        android:src="@drawable/globe" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/prevent_card"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#173FA3"
+                app:cardCornerRadius="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="62dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center_horizontal"
+                        android:text="Prevent COVID-19"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="46dp"
+                        android:layout_height="37dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="52dp"
+                        android:layout_marginEnd="65dp"
+                        android:layout_marginRight="65dp"
+                        android:src="@drawable/security"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/features_1"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="744dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ideas_card"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#173FA3"
+                app:cardCornerRadius="2dp"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="181dp"
+                    android:layout_height="107dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="43dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Submit your Ideas"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="17sp"
+                        android:gravity="center_horizontal" />
+
+                    <ImageView
+                        android:layout_width="46dp"
+                        android:layout_height="37dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="52dp"
+                        android:layout_marginEnd="65dp"
+                        android:layout_marginRight="65dp"
+                        android:src="@drawable/note" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/news_card"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#173FA3"
+                app:cardCornerRadius="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="62dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center_horizontal"
+                        android:text="News"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="46dp"
+                        android:layout_height="37dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="52dp"
+                        android:layout_marginEnd="65dp"
+                        android:layout_marginRight="65dp"
+                        android:src="@drawable/news"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/features3"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="850dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/contact_card"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#173FA3"
+                app:cardCornerRadius="2dp"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="181dp"
+                    android:layout_height="107dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="43dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Emergency Contacts"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="17sp"
+                        android:gravity="center_horizontal" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="62dp"
+                        android:layout_marginEnd="65dp"
+                        android:layout_marginRight="65dp"
+                        android:src="@drawable/call" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/quarantine_card"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#173FA3"
+                app:cardCornerRadius="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="62dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center_horizontal"
+                        android:text="Share Quarantine location"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="46dp"
+                        android:layout_height="37dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="52dp"
+                        android:layout_marginEnd="65dp"
+                        android:layout_marginRight="65dp"
+                        android:src="@drawable/places"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">COVID-19 Kit</string>
+    <string name="app_name">COVID-19 Explorer</string>
     <string name="title_activity_nav">NavActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -15,208 +15,210 @@
     <string name="home_second">Home Second</string>
     <string name="title_activity_location">Map</string>
     <string name="title_activity_quarantine">Map</string>
+    <string name="title_activity_home">HomeActivity</string>
+
 
     <!--    <string-array name="countries">-->
-    <!--        <item>Select Country</item>-->
-    <!--        <item>Afghanistan</item>-->
-    <!--        <item>Albania</item>-->
-    <!--        <item>Algeria</item>-->
-    <!--        <item>Andorra</item>-->
-    <!--        <item>Angola</item>-->
-    <!--        <item>Anguilla</item>-->
-    <!--        <item>Antigua and Barbuda</item>-->
-    <!--        <item>Argentina</item>-->
-    <!--        <item>Armenia</item>-->
-    <!--        <item>Aruba</item>-->
-    <!--        <item>Australia</item>-->
-    <!--        <item>Austria</item>-->
-    <!--        <item>Azerbaijan</item>-->
-    <!--        <item>Bahamas</item>-->
-    <!--        <item>Bahrain</item>-->
-    <!--        <item>Bangladesh</item>-->
-    <!--        <item>Barbados</item>-->
-    <!--        <item>Belarus</item>-->
-    <!--        <item>Belgium</item>-->
-    <!--        <item>Belize</item>-->
-    <!--        <item>Benin</item>-->
-    <!--        <item>Bermuda</item>-->
-    <!--        <item>Bhutan</item>-->
-    <!--        <item>Bolivia</item>-->
-    <!--        <item>Bosnia and Herzegovina</item>-->
-    <!--        <item>Brazil</item>-->
-    <!--        <item>British Virgin Islands</item>-->
-    <!--        <item>Brunei</item>-->
-    <!--        <item>Bulgaria</item>-->
-    <!--        <item>Burkina Faso</item>-->
-    <!--        <item>Cabo Verde</item>-->
-    <!--        <item>Cambodia</item>-->
-    <!--        <item>Cameroon</item>-->
-    <!--        <item>Canada</item>-->
-    <!--        <item>Cayman Islands</item>-->
-    <!--        <item>Central African Republic</item>-->
-    <!--        <item>Chad</item>-->
-    <!--        <item>Channel Islands</item>-->
-    <!--        <item>Chile</item>-->
-    <!--        <item>China</item>-->
-    <!--        <item>Colombia</item>-->
-    <!--        <item>Congo</item>-->
-    <!--        <item>Costa Rica</item>-->
-    <!--        <item>Croatia</item>-->
-    <!--        <item>Cuba</item>-->
-    <!--        <item>Curaçao</item>-->
-    <!--        <item>Cyprus</item>-->
-    <!--        <item>Czech Republic (Czechia)</item>-->
-    <!--        <item>Côte d'Ivoire	</item>-->
-    <!--        <item>Denmark</item>-->
-    <!--        <item>Djibouti</item>-->
-    <!--        <item>Dominica</item>-->
-    <!--        <item>Dominican Republic</item>-->
-    <!--        <item>DR Congo	</item>-->
-    <!--        <item>Ecuador</item>-->
-    <!--        <item>Egypt</item>-->
-    <!--        <item>El Salvador</item>-->
-    <!--        <item>Equatorial Guinea	</item>-->
-    <!--        <item>Eritrea</item>-->
-    <!--        <item>Estonia</item>-->
-    <!--        <item>Eswatini</item>-->
-    <!--        <item>Ethiopia	</item>-->
-    <!--        <item>Faeroe Islands	</item>-->
-    <!--        <item>Fiji</item>-->
-    <!--        <item>Finland</item>-->
-    <!--        <item>France</item>-->
-    <!--        <item>French Guiana	</item>-->
-    <!--        <item>French Polynesia	</item>-->
-    <!--        <item>Gabon	</item>-->
-    <!--        <item>Gambia</item>-->
-    <!--        <item>Georgia	</item>-->
-    <!--        <item>Germany</item>-->
-    <!--        <item>Ghana</item>-->
-    <!--        <item>Gibraltar</item>-->
-    <!--        <item>Greece</item>-->
-    <!--        <item>Greenland</item>-->
-    <!--        <item>Grenada</item>-->
-    <!--        <item>Guadeloupe</item>-->
-    <!--        <item>Guatemala</item>-->
-    <!--        <item>Guinea</item>-->
-    <!--        <item>Guinea-Bissau	</item>-->
-    <!--        <item>Guyana</item>-->
-    <!--        <item>Haiti</item>-->
-    <!--        <item>Holy See	</item>-->
-    <!--        <item>Honduras</item>-->
-    <!--        <item>Hong Kong	</item>-->
-    <!--        <item>Hungary</item>-->
-    <!--        <item>Iceland</item>-->
-    <!--        <item>India</item>-->
-    <!--        <item>Indonesia</item>-->
-    <!--        <item>Iran</item>-->
-    <!--        <item>Iraq</item>-->
-    <!--        <item>Ireland</item>-->
-    <!--        <item>Isle of Man</item>-->
-    <!--        <item>Israel</item>-->
-    <!--        <item>Italy</item>-->
-    <!--        <item>Jamaica</item>-->
-    <!--        <item>Japan (+Diamond Princess)</item>-->
-    <!--        <item>Jordan</item>-->
-    <!--        <item>Kazakhstan</item>-->
-    <!--        <item>Kenya</item>-->
-    <!--        <item>Kuwait</item>-->
-    <!--        <item>Kyrgyzstan</item>-->
-    <!--        <item>Laos</item>-->
-    <!--        <item>Latvia</item>-->
-    <!--        <item>Lebanon</item>-->
-    <!--        <item>Liberia</item>-->
-    <!--        <item>Libya</item>-->
-    <!--        <item>Liechtenstein</item>-->
-    <!--        <item>Lithuania</item>-->
-    <!--        <item>Luxembourg</item>-->
-    <!--        <item>Macao</item>-->
-    <!--        <item>Madagascar</item>-->
-    <!--        <item>Malaysia</item>-->
-    <!--        <item>Maldives</item>-->
-    <!--        <item>Mali</item>-->
-    <!--        <item>Malta</item>-->
-    <!--        <item>Martinique</item>-->
-    <!--        <item>Mauritania</item>-->
-    <!--        <item>Mauritius</item>-->
-    <!--        <item>Mayotte</item>-->
-    <!--        <item>Mexico</item>-->
-    <!--        <item>Moldova</item>-->
-    <!--        <item>Monaco</item>-->
-    <!--        <item>Mongolia</item>-->
-    <!--        <item>Montenegro</item>-->
-    <!--        <item>Montserrat</item>-->
-    <!--        <item>Morocco</item>-->
-    <!--        <item>Mozambique</item>-->
-    <!--        <item>MS Zaandam</item>-->
-    <!--        <item>Myanmar</item>-->
-    <!--        <item>Namibia</item>-->
-    <!--        <item>Nepal</item>-->
-    <!--        <item>Netherlands</item>-->
-    <!--        <item>New Caledonia	</item>-->
-    <!--        <item>New Zealand</item>-->
-    <!--        <item>Nicaragua</item>-->
-    <!--        <item>Niger</item>-->
-    <!--        <item>Nigeria</item>-->
-    <!--        <item>North Macedonia</item>-->
-    <!--        <item>Norway</item>-->
-    <!--        <item>Oman</item>-->
-    <!--        <item>Pakistan</item>-->
-    <!--        <item>Panama</item>-->
-    <!--        <item>Papua New Guinea</item>-->
-    <!--        <item>Paraguay</item>-->
-    <!--        <item>Peru	</item>-->
-    <!--        <item>Philippines</item>-->
-    <!--        <item>Poland</item>-->
-    <!--        <item>Portugal</item>-->
-    <!--        <item>Qatar</item>-->
-    <!--        <item>Romania</item>-->
-    <!--        <item>Russia</item>-->
-    <!--        <item>Rwanda</item>-->
-    <!--        <item>Réunion</item>-->
-    <!--        <item>Saint Barthelemy</item>-->
-    <!--        <item>Saint Kitts & Nevis</item>-->
-    <!--        <item>Saint Lucia</item>-->
-    <!--        <item>Saint Martin</item>-->
-    <!--        <item>San Marino</item>-->
-    <!--        <item>Saudi Arabia</item>-->
-    <!--        <item>Senegal</item>-->
-    <!--        <item>Serbia</item>-->
-    <!--        <item>Seychelles</item>-->
-    <!--        <item>Singapore</item>-->
-    <!--        <item>Sint Maarten</item>-->
-    <!--        <item>Slovakia</item>-->
-    <!--        <item>Slovenia</item>-->
-    <!--        <item>Somalia</item>-->
-    <!--        <item>South Africa</item>-->
-    <!--        <item>South Korea</item>-->
-    <!--        <item>Spain</item>-->
-    <!--        <item>Sri Lanka	</item>-->
-    <!--        <item>St. Vincent &amp; Grenadines</item>-->
-    <!--        <item>State of Palestine</item>-->
-    <!--        <item>Sudan</item>-->
-    <!--        <item>Suriname</item>-->
-    <!--        <item>Sweden</item>-->
-    <!--        <item>Switzerland</item>-->
-    <!--        <item>Syria</item>-->
-    <!--        <item>Taiwan</item>-->
-    <!--        <item>Tanzania</item>-->
-    <!--        <item>Thailand</item>-->
-    <!--        <item>Timor-Leste</item>-->
-    <!--        <item>Togo</item>-->
-    <!--        <item>Trinidad and Tobago</item>-->
-    <!--        <item>Tunisia</item>-->
-    <!--        <item>Turkey</item>-->
-    <!--        <item>Turks and Caicos</item>-->
-    <!--        <item>Uganda</item>-->
-    <!--        <item>Ukraine</item>-->
-    <!--        <item>United Arab Emirates</item>-->
-    <!--        <item>United Kingdom</item>-->
-    <!--        <item>United States</item>-->
-    <!--        <item>Uruguay</item>-->
-    <!--        <item>Uzbekistan</item>-->
-    <!--        <item>Venezuela</item>-->
-    <!--        <item>Vietnam</item>-->
-    <!--        <item>Zambia</item>-->
-    <!--        <item>Zimbabwe</item>-->
+    <!--        <layout_news_item>Select Country</layout_news_item>-->
+    <!--        <layout_news_item>Afghanistan</layout_news_item>-->
+    <!--        <layout_news_item>Albania</layout_news_item>-->
+    <!--        <layout_news_item>Algeria</layout_news_item>-->
+    <!--        <layout_news_item>Andorra</layout_news_item>-->
+    <!--        <layout_news_item>Angola</layout_news_item>-->
+    <!--        <layout_news_item>Anguilla</layout_news_item>-->
+    <!--        <layout_news_item>Antigua and Barbuda</layout_news_item>-->
+    <!--        <layout_news_item>Argentina</layout_news_item>-->
+    <!--        <layout_news_item>Armenia</layout_news_item>-->
+    <!--        <layout_news_item>Aruba</layout_news_item>-->
+    <!--        <layout_news_item>Australia</layout_news_item>-->
+    <!--        <layout_news_item>Austria</layout_news_item>-->
+    <!--        <layout_news_item>Azerbaijan</layout_news_item>-->
+    <!--        <layout_news_item>Bahamas</layout_news_item>-->
+    <!--        <layout_news_item>Bahrain</layout_news_item>-->
+    <!--        <layout_news_item>Bangladesh</layout_news_item>-->
+    <!--        <layout_news_item>Barbados</layout_news_item>-->
+    <!--        <layout_news_item>Belarus</layout_news_item>-->
+    <!--        <layout_news_item>Belgium</layout_news_item>-->
+    <!--        <layout_news_item>Belize</layout_news_item>-->
+    <!--        <layout_news_item>Benin</layout_news_item>-->
+    <!--        <layout_news_item>Bermuda</layout_news_item>-->
+    <!--        <layout_news_item>Bhutan</layout_news_item>-->
+    <!--        <layout_news_item>Bolivia</layout_news_item>-->
+    <!--        <layout_news_item>Bosnia and Herzegovina</layout_news_item>-->
+    <!--        <layout_news_item>Brazil</layout_news_item>-->
+    <!--        <layout_news_item>British Virgin Islands</layout_news_item>-->
+    <!--        <layout_news_item>Brunei</layout_news_item>-->
+    <!--        <layout_news_item>Bulgaria</layout_news_item>-->
+    <!--        <layout_news_item>Burkina Faso</layout_news_item>-->
+    <!--        <layout_news_item>Cabo Verde</layout_news_item>-->
+    <!--        <layout_news_item>Cambodia</layout_news_item>-->
+    <!--        <layout_news_item>Cameroon</layout_news_item>-->
+    <!--        <layout_news_item>Canada</layout_news_item>-->
+    <!--        <layout_news_item>Cayman Islands</layout_news_item>-->
+    <!--        <layout_news_item>Central African Republic</layout_news_item>-->
+    <!--        <layout_news_item>Chad</layout_news_item>-->
+    <!--        <layout_news_item>Channel Islands</layout_news_item>-->
+    <!--        <layout_news_item>Chile</layout_news_item>-->
+    <!--        <layout_news_item>China</layout_news_item>-->
+    <!--        <layout_news_item>Colombia</layout_news_item>-->
+    <!--        <layout_news_item>Congo</layout_news_item>-->
+    <!--        <layout_news_item>Costa Rica</layout_news_item>-->
+    <!--        <layout_news_item>Croatia</layout_news_item>-->
+    <!--        <layout_news_item>Cuba</layout_news_item>-->
+    <!--        <layout_news_item>Curaçao</layout_news_item>-->
+    <!--        <layout_news_item>Cyprus</layout_news_item>-->
+    <!--        <layout_news_item>Czech Republic (Czechia)</layout_news_item>-->
+    <!--        <layout_news_item>Côte d'Ivoire	</layout_news_item>-->
+    <!--        <layout_news_item>Denmark</layout_news_item>-->
+    <!--        <layout_news_item>Djibouti</layout_news_item>-->
+    <!--        <layout_news_item>Dominica</layout_news_item>-->
+    <!--        <layout_news_item>Dominican Republic</layout_news_item>-->
+    <!--        <layout_news_item>DR Congo	</layout_news_item>-->
+    <!--        <layout_news_item>Ecuador</layout_news_item>-->
+    <!--        <layout_news_item>Egypt</layout_news_item>-->
+    <!--        <layout_news_item>El Salvador</layout_news_item>-->
+    <!--        <layout_news_item>Equatorial Guinea	</layout_news_item>-->
+    <!--        <layout_news_item>Eritrea</layout_news_item>-->
+    <!--        <layout_news_item>Estonia</layout_news_item>-->
+    <!--        <layout_news_item>Eswatini</layout_news_item>-->
+    <!--        <layout_news_item>Ethiopia	</layout_news_item>-->
+    <!--        <layout_news_item>Faeroe Islands	</layout_news_item>-->
+    <!--        <layout_news_item>Fiji</layout_news_item>-->
+    <!--        <layout_news_item>Finland</layout_news_item>-->
+    <!--        <layout_news_item>France</layout_news_item>-->
+    <!--        <layout_news_item>French Guiana	</layout_news_item>-->
+    <!--        <layout_news_item>French Polynesia	</layout_news_item>-->
+    <!--        <layout_news_item>Gabon	</layout_news_item>-->
+    <!--        <layout_news_item>Gambia</layout_news_item>-->
+    <!--        <layout_news_item>Georgia	</layout_news_item>-->
+    <!--        <layout_news_item>Germany</layout_news_item>-->
+    <!--        <layout_news_item>Ghana</layout_news_item>-->
+    <!--        <layout_news_item>Gibraltar</layout_news_item>-->
+    <!--        <layout_news_item>Greece</layout_news_item>-->
+    <!--        <layout_news_item>Greenland</layout_news_item>-->
+    <!--        <layout_news_item>Grenada</layout_news_item>-->
+    <!--        <layout_news_item>Guadeloupe</layout_news_item>-->
+    <!--        <layout_news_item>Guatemala</layout_news_item>-->
+    <!--        <layout_news_item>Guinea</layout_news_item>-->
+    <!--        <layout_news_item>Guinea-Bissau	</layout_news_item>-->
+    <!--        <layout_news_item>Guyana</layout_news_item>-->
+    <!--        <layout_news_item>Haiti</layout_news_item>-->
+    <!--        <layout_news_item>Holy See	</layout_news_item>-->
+    <!--        <layout_news_item>Honduras</layout_news_item>-->
+    <!--        <layout_news_item>Hong Kong	</layout_news_item>-->
+    <!--        <layout_news_item>Hungary</layout_news_item>-->
+    <!--        <layout_news_item>Iceland</layout_news_item>-->
+    <!--        <layout_news_item>India</layout_news_item>-->
+    <!--        <layout_news_item>Indonesia</layout_news_item>-->
+    <!--        <layout_news_item>Iran</layout_news_item>-->
+    <!--        <layout_news_item>Iraq</layout_news_item>-->
+    <!--        <layout_news_item>Ireland</layout_news_item>-->
+    <!--        <layout_news_item>Isle of Man</layout_news_item>-->
+    <!--        <layout_news_item>Israel</layout_news_item>-->
+    <!--        <layout_news_item>Italy</layout_news_item>-->
+    <!--        <layout_news_item>Jamaica</layout_news_item>-->
+    <!--        <layout_news_item>Japan (+Diamond Princess)</layout_news_item>-->
+    <!--        <layout_news_item>Jordan</layout_news_item>-->
+    <!--        <layout_news_item>Kazakhstan</layout_news_item>-->
+    <!--        <layout_news_item>Kenya</layout_news_item>-->
+    <!--        <layout_news_item>Kuwait</layout_news_item>-->
+    <!--        <layout_news_item>Kyrgyzstan</layout_news_item>-->
+    <!--        <layout_news_item>Laos</layout_news_item>-->
+    <!--        <layout_news_item>Latvia</layout_news_item>-->
+    <!--        <layout_news_item>Lebanon</layout_news_item>-->
+    <!--        <layout_news_item>Liberia</layout_news_item>-->
+    <!--        <layout_news_item>Libya</layout_news_item>-->
+    <!--        <layout_news_item>Liechtenstein</layout_news_item>-->
+    <!--        <layout_news_item>Lithuania</layout_news_item>-->
+    <!--        <layout_news_item>Luxembourg</layout_news_item>-->
+    <!--        <layout_news_item>Macao</layout_news_item>-->
+    <!--        <layout_news_item>Madagascar</layout_news_item>-->
+    <!--        <layout_news_item>Malaysia</layout_news_item>-->
+    <!--        <layout_news_item>Maldives</layout_news_item>-->
+    <!--        <layout_news_item>Mali</layout_news_item>-->
+    <!--        <layout_news_item>Malta</layout_news_item>-->
+    <!--        <layout_news_item>Martinique</layout_news_item>-->
+    <!--        <layout_news_item>Mauritania</layout_news_item>-->
+    <!--        <layout_news_item>Mauritius</layout_news_item>-->
+    <!--        <layout_news_item>Mayotte</layout_news_item>-->
+    <!--        <layout_news_item>Mexico</layout_news_item>-->
+    <!--        <layout_news_item>Moldova</layout_news_item>-->
+    <!--        <layout_news_item>Monaco</layout_news_item>-->
+    <!--        <layout_news_item>Mongolia</layout_news_item>-->
+    <!--        <layout_news_item>Montenegro</layout_news_item>-->
+    <!--        <layout_news_item>Montserrat</layout_news_item>-->
+    <!--        <layout_news_item>Morocco</layout_news_item>-->
+    <!--        <layout_news_item>Mozambique</layout_news_item>-->
+    <!--        <layout_news_item>MS Zaandam</layout_news_item>-->
+    <!--        <layout_news_item>Myanmar</layout_news_item>-->
+    <!--        <layout_news_item>Namibia</layout_news_item>-->
+    <!--        <layout_news_item>Nepal</layout_news_item>-->
+    <!--        <layout_news_item>Netherlands</layout_news_item>-->
+    <!--        <layout_news_item>New Caledonia	</layout_news_item>-->
+    <!--        <layout_news_item>New Zealand</layout_news_item>-->
+    <!--        <layout_news_item>Nicaragua</layout_news_item>-->
+    <!--        <layout_news_item>Niger</layout_news_item>-->
+    <!--        <layout_news_item>Nigeria</layout_news_item>-->
+    <!--        <layout_news_item>North Macedonia</layout_news_item>-->
+    <!--        <layout_news_item>Norway</layout_news_item>-->
+    <!--        <layout_news_item>Oman</layout_news_item>-->
+    <!--        <layout_news_item>Pakistan</layout_news_item>-->
+    <!--        <layout_news_item>Panama</layout_news_item>-->
+    <!--        <layout_news_item>Papua New Guinea</layout_news_item>-->
+    <!--        <layout_news_item>Paraguay</layout_news_item>-->
+    <!--        <layout_news_item>Peru	</layout_news_item>-->
+    <!--        <layout_news_item>Philippines</layout_news_item>-->
+    <!--        <layout_news_item>Poland</layout_news_item>-->
+    <!--        <layout_news_item>Portugal</layout_news_item>-->
+    <!--        <layout_news_item>Qatar</layout_news_item>-->
+    <!--        <layout_news_item>Romania</layout_news_item>-->
+    <!--        <layout_news_item>Russia</layout_news_item>-->
+    <!--        <layout_news_item>Rwanda</layout_news_item>-->
+    <!--        <layout_news_item>Réunion</layout_news_item>-->
+    <!--        <layout_news_item>Saint Barthelemy</layout_news_item>-->
+    <!--        <layout_news_item>Saint Kitts & Nevis</layout_news_item>-->
+    <!--        <layout_news_item>Saint Lucia</layout_news_item>-->
+    <!--        <layout_news_item>Saint Martin</layout_news_item>-->
+    <!--        <layout_news_item>San Marino</layout_news_item>-->
+    <!--        <layout_news_item>Saudi Arabia</layout_news_item>-->
+    <!--        <layout_news_item>Senegal</layout_news_item>-->
+    <!--        <layout_news_item>Serbia</layout_news_item>-->
+    <!--        <layout_news_item>Seychelles</layout_news_item>-->
+    <!--        <layout_news_item>Singapore</layout_news_item>-->
+    <!--        <layout_news_item>Sint Maarten</layout_news_item>-->
+    <!--        <layout_news_item>Slovakia</layout_news_item>-->
+    <!--        <layout_news_item>Slovenia</layout_news_item>-->
+    <!--        <layout_news_item>Somalia</layout_news_item>-->
+    <!--        <layout_news_item>South Africa</layout_news_item>-->
+    <!--        <layout_news_item>South Korea</layout_news_item>-->
+    <!--        <layout_news_item>Spain</layout_news_item>-->
+    <!--        <layout_news_item>Sri Lanka	</layout_news_item>-->
+    <!--        <layout_news_item>St. Vincent &amp; Grenadines</layout_news_item>-->
+    <!--        <layout_news_item>State of Palestine</layout_news_item>-->
+    <!--        <layout_news_item>Sudan</layout_news_item>-->
+    <!--        <layout_news_item>Suriname</layout_news_item>-->
+    <!--        <layout_news_item>Sweden</layout_news_item>-->
+    <!--        <layout_news_item>Switzerland</layout_news_item>-->
+    <!--        <layout_news_item>Syria</layout_news_item>-->
+    <!--        <layout_news_item>Taiwan</layout_news_item>-->
+    <!--        <layout_news_item>Tanzania</layout_news_item>-->
+    <!--        <layout_news_item>Thailand</layout_news_item>-->
+    <!--        <layout_news_item>Timor-Leste</layout_news_item>-->
+    <!--        <layout_news_item>Togo</layout_news_item>-->
+    <!--        <layout_news_item>Trinidad and Tobago</layout_news_item>-->
+    <!--        <layout_news_item>Tunisia</layout_news_item>-->
+    <!--        <layout_news_item>Turkey</layout_news_item>-->
+    <!--        <layout_news_item>Turks and Caicos</layout_news_item>-->
+    <!--        <layout_news_item>Uganda</layout_news_item>-->
+    <!--        <layout_news_item>Ukraine</layout_news_item>-->
+    <!--        <layout_news_item>United Arab Emirates</layout_news_item>-->
+    <!--        <layout_news_item>United Kingdom</layout_news_item>-->
+    <!--        <layout_news_item>United States</layout_news_item>-->
+    <!--        <layout_news_item>Uruguay</layout_news_item>-->
+    <!--        <layout_news_item>Uzbekistan</layout_news_item>-->
+    <!--        <layout_news_item>Venezuela</layout_news_item>-->
+    <!--        <layout_news_item>Vietnam</layout_news_item>-->
+    <!--        <layout_news_item>Zambia</layout_news_item>-->
+    <!--        <layout_news_item>Zimbabwe</layout_news_item>-->
     <!--    </string-array>-->
 </resources>

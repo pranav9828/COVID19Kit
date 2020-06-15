@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home" android:title="Home" android:icon="@drawable/home"/>
+        <item android:id="@+id/nav_donation" android:title="Donations" android:icon="@drawable/money"/>
+        <item android:id="@+id/nav_prevention" android:title="Prevent COVID - 19" android:icon="@drawable/security"/>
+        <item android:id="@+id/nav_ideas" android:title="Ideas" android:icon="@drawable/note"/>
+        <item android:id="@+id/nav_news" android:title="COVID - 19 News" android:icon="@drawable/news"/>
+        <item android:id="@+id/nav_emergency" android:title="Emergency" android:icon="@drawable/call"/>
+        <item android:id="@+id/nav_location" android:title="Share Location" android:icon="@drawable/places"/>
+    </group>
+</menu>

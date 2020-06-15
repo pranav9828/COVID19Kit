@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:scrollbars="none"
     android:layout_height="match_parent"
-    tools:context=".Symptoms">
+    tools:context=".Activity.Symptoms">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,44 +15,31 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:layout_marginLeft="28dp"
-            android:layout_marginTop="16dp"
-            android:text="COVID - 19"
-            android:textColor="#100D40"
-            android:textSize="23sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Symptoms"
-            android:textColor="#100D40"
             android:layout_marginStart="24dp"
             android:layout_marginLeft="24dp"
-            android:textSize="29sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="5dp"
+            android:text="COVID-19 Symptoms"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="#100D40"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
-            android:layout_height="230dp"
-            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
             android:orientation="vertical"
             android:padding="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7">
+            app:layout_constraintTop_toBottomOf="@+id/textView6">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/sneeze_card"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 app:cardBackgroundColor="#D3DEE1"
                 app:cardCornerRadius="5dp">
 
@@ -70,7 +58,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <TextView
@@ -78,16 +66,17 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
+                            android:layout_marginLeft="5dp"
                             android:text="Sneezing"
                             android:textColor="#100D40"
-                            android:textSize="20sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/sneezing_desc_text"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_margin="6dp"
                             android:lineSpacingExtra="5dp"
                             android:text="During sneezing we spread the corona virus to people in our surroundings. Use kerchief while sneezing and cover your face."
                             android:textColor="#100D40"
@@ -100,7 +89,7 @@
         <LinearLayout
             android:id="@+id/linearLayout4"
             android:layout_width="match_parent"
-            android:layout_height="240dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="10dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -110,7 +99,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cough_card"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 app:cardBackgroundColor="#D3DEE1"
                 app:cardCornerRadius="5dp">
 
@@ -129,7 +118,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <TextView
@@ -137,16 +126,17 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
+                            android:layout_marginLeft="5dp"
                             android:text="Difficulty in breathing"
                             android:textColor="#100D40"
-                            android:textSize="20sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/cough_desc_text"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_margin="6dp"
                             android:lineSpacingExtra="5dp"
                             android:text="Shortness of breath can have causes that are not due to underlying disease. Examples include exercise, altitude, tight clothing, a prolonged period of bed rest or a sedentary lifestyle."
                             android:textColor="#100D40"
@@ -159,7 +149,7 @@
         <LinearLayout
             android:id="@+id/linearLayout5"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="10dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -169,7 +159,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/fever_card"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 app:cardBackgroundColor="#D3DEE1"
                 app:cardCornerRadius="5dp">
 
@@ -188,7 +178,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <TextView
@@ -198,7 +188,7 @@
                             android:layout_marginTop="8dp"
                             android:text="Fever"
                             android:textColor="#100D40"
-                            android:textSize="20sp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -217,7 +207,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="230dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="10dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -227,13 +217,13 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/dry_cough_card"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 app:cardBackgroundColor="#D3DEE1"
                 app:cardCornerRadius="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -246,7 +236,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <TextView
@@ -255,6 +245,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:text="Dry Cough"
+                            android:layout_marginLeft="5dp"
                             android:textColor="#100D40"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -263,7 +254,7 @@
                             android:id="@+id/dry_cough_desc_text"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_margin="6dp"
                             android:lineSpacingExtra="5dp"
                             android:text="Coughing can have causes that aren't due to underlying disease. Examples include normal clearing of airways, irritants such as smoke and gas, tobacco use or improperly swallowing food and liquids."
                             android:textColor="#100D40"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="#3963CF"
     android:layout_height="match_parent"
-    tools:context=".Country_List">
+    tools:context=".Activity.Country_List">
 
     <ListView
         android:id="@+id/listView"

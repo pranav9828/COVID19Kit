@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="0dp"
+    tools:context=".Fragments.PreventFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Prevent COVID - 19"
+            android:textColor="#100D40"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/features"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/symptoms_card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                app:cardBackgroundColor="#173FA3"
+                app:cardCornerRadius="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/symptoms_heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center_horizontal"
+                        android:text="Symptoms"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/symptoms_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_alignTop="@+id/symptoms_heading"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Signs identify the risk of Infection"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/prevent_card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#173FA3"
+                app:cardCornerRadius="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/precautions_text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center_horizontal"
+                        android:text="Precautions"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/precautions_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/precautions_text2"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Help you avoid the risk of Infection"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/requirements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Requirements"
+            android:textColor="#100D40"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/features" />
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:text="Help you prevent viruses better"
+            android:textColor="#100D40"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.102"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requirements" />
+
+        <ImageView
+            android:id="@+id/mask"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/help"
+            app:srcCompat="@drawable/mask" />
+
+        <ImageView
+            android:id="@+id/handwash"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.68"
+            app:layout_constraintStart_toEndOf="@+id/sanitizer"
+            app:layout_constraintTop_toBottomOf="@+id/help"
+            app:srcCompat="@drawable/handwash" />
+
+        <ImageView
+            android:id="@+id/no_shake"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            app:layout_constraintStart_toEndOf="@+id/mask"
+            app:layout_constraintTop_toBottomOf="@+id/help"
+            app:srcCompat="@drawable/no_shake" />
+
+        <ImageView
+            android:id="@+id/sanitizer"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            app:layout_constraintStart_toEndOf="@+id/no_shake"
+            app:layout_constraintTop_toBottomOf="@+id/help"
+            app:srcCompat="@drawable/sanitize" />
+
+        <ImageView
+            android:id="@+id/doc"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/no_shake"
+            app:srcCompat="@drawable/doc" />
+
+        <TextView
+            android:id="@+id/self_check_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready to Self Check up?"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="#100D40"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doc"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/check_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:lineSpacingExtra="5dp"
+            android:text="In this session you will be asked a number of questions about symptoms of COVID - 19. You have to answer these questions honestly so that you know what happened to you and what you have to do."
+            android:textColor="#100D40"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/self_check_up" />
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#493EFF"
+            android:text="Start"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check_up"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

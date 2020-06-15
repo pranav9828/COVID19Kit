@@ -21,17 +21,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Donations"
-            android:parentActivityName=".Dashboard"
+            android:name=".Activity.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+        <activity
+            android:name=".Activity.Donations"
+            android:parentActivityName=".Activity.Dashboard"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".WorkReminder"
-            android:parentActivityName=".Dashboard"
+            android:name=".Activity.WorkReminder"
+            android:parentActivityName=".Activity.Dashboard"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-        <activity android:name=".WorldCount" />
-        <activity android:name=".NewsDetail" />
+        <activity android:name=".Activity.NewsDetail" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -45,62 +51,62 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".Quarantine"
+            android:name=".Activity.Quarantine"
             android:label="@string/title_activity_quarantine"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".Net"
+            android:name=".Activity.Net"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Design.Light.NoActionBar"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".EmergencyContact"
-            android:parentActivityName=".Dashboard"
+            android:name=".Activity.EmergencyContact"
+            android:parentActivityName=".Activity.Dashboard"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".CoughTest"
-            android:parentActivityName=".Prevention"
+            android:name=".Activity.CoughTest"
+            android:parentActivityName=".Activity.Prevention"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".Prevent"
-            android:parentActivityName=".Prevention"
+            android:name=".Activity.Prevent"
+            android:parentActivityName=".Activity.Prevention"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".Symptoms"
-            android:parentActivityName=".Prevention"
+            android:name=".Activity.Symptoms"
+            android:parentActivityName=".Activity.Prevention"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".Country_List"
-            android:parentActivityName=".Dashboard"
+            android:name=".Activity.Country_List"
+            android:parentActivityName=".Activity.Dashboard"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".CoronaNews"
-            android:parentActivityName=".Dashboard"
+            android:name=".Activity.CoronaNews"
+            android:parentActivityName=".Activity.CoronaNews"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".Ideas"
-            android:parentActivityName=".Dashboard"
+            android:name=".Activity.Ideas"
+            android:parentActivityName=".Activity.Dashboard"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".Prevention"
-            android:parentActivityName=".Dashboard"
+            android:name=".Activity.Prevention"
+            android:parentActivityName=".Activity.Dashboard"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".Dashboard"
+            android:name=".Activity.Dashboard"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Design.Light.NoActionBar"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             tools:ignore="LockedOrientationActivity">
@@ -111,7 +117,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".AlarmReceiver" />
+        <receiver android:name=".Classes.AlarmReceiver" />
 
         <meta-data
             android:name="preloaded_fonts"

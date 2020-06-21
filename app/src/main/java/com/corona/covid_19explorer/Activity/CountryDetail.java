@@ -16,14 +16,11 @@ public class CountryDetail extends AppCompatActivity {
 
     TextView total,cured,active,death;
     PieChart pieChart;
+    String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_country_detail);
-
-        getSupportActionBar().setTitle("");
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         total = (TextView) findViewById(R.id.total);
         cured = (TextView) findViewById(R.id.cured);
@@ -36,6 +33,11 @@ public class CountryDetail extends AppCompatActivity {
         cured.setText(intent.getStringExtra("cured"));
         active.setText(intent.getStringExtra("active"));
         death.setText(intent.getStringExtra("death"));
+        name = intent.getStringExtra("name");
+
+        getSupportActionBar().setTitle(name + " Stats");
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         pieChart.addPieSlice(new PieModel("total", Integer.parseInt(total.getText().toString()), Color.BLUE));
         pieChart.addPieSlice(new PieModel("cured", Integer.parseInt(cured.getText().toString()), Color.parseColor("#FFA726")));

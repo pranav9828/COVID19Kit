@@ -80,7 +80,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         holder.author.setText(headlines.get(position).getAuthor());
         holder.title.setText(headlines.get(position).getTitle());
         holder.desc.setText(headlines.get(position).getDescription());
-        holder.publishedAd.setText(headlines.get(position).getPublishedAt());
+        holder.publishedAd.setText(Utils.DateFormat(headlines.get(position).getPublishedAt()));
         holder.time.setText("\u2022" + Utils.DateToTimeFormat(headlines.get(position).getPublishedAt()));
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override

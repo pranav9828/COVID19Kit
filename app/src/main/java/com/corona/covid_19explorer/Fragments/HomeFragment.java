@@ -1,12 +1,10 @@
 package com.corona.covid_19explorer.Fragments;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -17,18 +15,12 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.corona.covid_19explorer.Activity.Country_List;
 import com.corona.covid_19explorer.R;
 
 import org.eazegraph.lib.charts.PieChart;
-import org.eazegraph.lib.charts.ValueLineChart;
 import org.eazegraph.lib.models.PieModel;
-import org.eazegraph.lib.models.ValueLinePoint;
-import org.eazegraph.lib.models.ValueLineSeries;
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 

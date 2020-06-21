@@ -43,6 +43,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHold
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, CountryDetail.class);
+                intent.putExtra("name", country.getName());
                 intent.putExtra("total", country.getTotal());
                 intent.putExtra("death", country.getDeath());
                 intent.putExtra("cured", country.getCured());

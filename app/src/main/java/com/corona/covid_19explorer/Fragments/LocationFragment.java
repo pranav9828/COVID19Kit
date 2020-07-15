@@ -163,5 +163,4 @@ public class LocationFragment extends Fragment {
         }
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
-
 }
